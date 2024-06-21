@@ -1,0 +1,142 @@
+/* General styles */
+.review-page {
+  background-color: #f9f9f9;
+  padding: 9rem;
+  text-align: center;
+}
+
+.t-header {
+  margin-bottom: 30px;
+}
+
+.t-header span {
+  display: block;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.t-header .text-5,
+.t-header .text-6 {
+  font-size: 1em;
+  color: #666;
+}
+
+.stars {
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.stars .static-star {
+  font-size: 1.5em;
+  color: #ffd700;
+}
+
+.write-review {
+  font-size: 1.2em;
+  color: #333;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.write-review:hover {
+  color: #000;
+}
+
+/* Review display styles */
+.review-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.review-container {
+  max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  /* border-radius: 10px; */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ff00ff;
+}
+
+.img-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow */
+}
+
+.img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.review-details {
+  text-align: center;
+}
+
+.review-name {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.review-details .stars {
+  margin-bottom: 10px;
+}
+
+.review-details .dynamic-star {
+  font-size: 1.5em;
+  color: #ffd700;
+}
+
+.review-message {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* PrevNextButtons styles */
+.prev-next-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.prev-button,
+.next-button {
+  color: black;
+  font-weight: bold;
+  border: none;
+  padding: 5px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
